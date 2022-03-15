@@ -1,0 +1,36 @@
+{
+  "message-teacher" : "ՈՒՍՈՒՑԻՉՆԵՐ",
+  "message-donors" : "ԴՈՆՈՐՆԵՐ",
+  "message-about-us": "ՄԵՐ ՄԱՍԻՆ",
+  "message-contact-us": "ԿԱՊՎԵՔ ՄԵԶ ՀԵՏ",
+  "message-blog": "ԲԼՈԳ",
+
+  "sign-up": "Գրանցվեք",
+  "its": "Դա արագ է և հեշտ:",
+
+  "name": "Անուն",
+  "last-name": "Ազգանուն",
+  "email": "Էլ. հասցե",
+  "telephone": "Հեռախոսահամար",
+  "region": "Տարածաշրջան",
+  "city": "Քաղաք, Գյուղ",
+  "school": "Դպրոց",
+  "subject": "Առարկա",
+  "grade": "Դասարան",
+  "password": "Գաղտնաբառ",
+  "confirm": "Հաստատել գաղտնաբառը",
+
+  "name-required": "Անունը պարտադիր է",
+  "last-name-required": "Ազգանունը պարտադիր է",
+  "email-required": "Էլ. փոստը ճիշտ չէ",
+  "telephone-required": "Հեռախոսահամարը ճիշտ չէ",
+  "region-required": "Տարածաշրջանը պարտադիր է",
+  "city-required": "Պահանջվում է քաղաք, գյուղ",
+  "school-required": "Դպրոցը պարտադիր է",
+  "subject-required": "Թեման պարտադիր է",
+  "grade-required": "Գնահատականը պարտադիր է",
+  "password-required": "Գաղտնաբառը չափազանց կարճ է",
+  "confirm-required": "Գաղտնաբառերը չեն համընկնում",
+
+  "register": "Գրանցվեք որպես դոնոր"
+}

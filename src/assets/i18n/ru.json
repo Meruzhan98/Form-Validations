@@ -1,0 +1,37 @@
+{
+  "message-teacher" : "УЧИТЕЛЯ",
+  "message-donors" : "ДОНОРЫ",
+  "message-about-us": "О НАС",
+  "message-contact-us": "СВЯЗАТЬСЯ С НАМИ",
+  "message-blog": "БЛОГ",
+
+  "sign-up": "Зарегистрируйтесь",
+  "its": "Это быстро и легко.",
+
+  "name": "Имя",
+  "last-name": "Фамилия",
+  "email": "Эл. адрес",
+  "telephone": "Телефонный номер",
+  "region": "Область",
+  "city": "Город, Деревня",
+  "school": "Школа",
+  "subject": "Тема",
+  "grade": "Оценка",
+  "password": "Пароль",
+  "confirm": "Подтвердить Пароль",
+
+  "name-required": "Укажите имя",
+  "last-name-required": "Требуется фамилия",
+  "email-required": "Электронная почта неверна",
+  "telephone-required": "Телефонный номер не правильный",
+  "region-required": "Укажите регион",
+  "city-required": "Город, Деревня обязательно",
+  "school-required": "Требуется школа",
+  "subject-required": "Укажите тему",
+  "grade-required": "Требуется оценка",
+  "password-required": "Пароль слишком короткий",
+  "confirm-required": "Пароли не совпадают",
+
+  "register": "Зарегистрируйтесь как донор"
+
+}

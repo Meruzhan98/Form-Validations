@@ -1,0 +1,37 @@
+{
+  "message-teacher" : "TEACHERS",
+  "message-donors" : "DONORS",
+  "message-about-us": "ABOUT US",
+  "message-contact-us": "CONTACT US",
+  "message-blog": "BLOG",
+
+  "sign-up": "Sign Up",
+  "its": "It's quick and easy.",
+
+  "name": "Name",
+  "last-name": "Last Name",
+  "email": "Email",
+  "telephone": "Telephone",
+  "region": "Region",
+  "city": "City, Village",
+  "school": "School",
+  "subject": "Subject",
+  "grade": "Grade",
+  "password": "Password",
+  "confirm": "Confirm Password",
+
+  "name-required": "Name is required",
+  "last-name-required": "Last Name is required",
+  "email-required": "Email is not correct",
+  "telephone-required": "Telephone is not correct",
+  "region-required": "Region is required",
+  "city-required": "City, Village is required",
+  "school-required": "School is required",
+  "subject-required": "Subject is required",
+  "grade-required": "Grade is required",
+  "password-required": "Password is too short",
+  "confirm-required": "Passwords don't match",
+
+  "register": "Register as a Donor"
+
+}

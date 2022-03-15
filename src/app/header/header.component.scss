@@ -1,0 +1,76 @@
+.routing {
+  height: 120px;
+  width: 100%;
+  background-color: #34c88a;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 47%;
+  top: 10px;
+  display: block;
+}
+
+.translation {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 96%;
+  top: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.routing a{
+  text-decoration: none;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.routing a:hover {
+  text-decoration: underline;
+}
+
+.routing a::after {
+  text-decoration: underline;
+}
+
+.routing-position {
+  margin-left: 15px;
+}
+
+.logo1 {
+  display: none;
+}
+
+
+@media screen and (max-width: 700px){
+
+  .routing {
+    background-color: white;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 47%;
+    top: 10px;
+  }
+
+}
