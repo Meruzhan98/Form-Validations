@@ -1,0 +1,27 @@
+.dialog {
+  width: 432px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lorem-ipsum {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #D80027;
+  font-weight: bold;
+}
+
+.close-dialog {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.exclamatory {
+  position: absolute;
+  right: 756px;
+  margin-top: 16px;
+}

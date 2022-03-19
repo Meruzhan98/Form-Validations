@@ -12,7 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DonorsComponent } from './donors/donors.component';
 import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { TeachersComponent } from './teachers/teachers.component';
+import { TeachersComponent} from './teachers/teachers.component';
 import { ReactiveFormsModule } from "@angular/forms";
 import { NumberComponent } from './number/number.component';
 import { MatIconModule } from "@angular/material/icon";
@@ -22,6 +22,8 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import {NgxMatSelectSearchModule} from "ngx-mat-select-search";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatDialogModule} from "@angular/material/dialog";
+import { DialogComponent } from './dialog/dialog.component';
 
 
 const appRoutes: Routes = [
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     HeaderComponent,
     NotFoundComponent,
     TeachersComponent,
-    NumberComponent
+    NumberComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +61,7 @@ const appRoutes: Routes = [
     NgxMatSelectSearchModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatDialogModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {

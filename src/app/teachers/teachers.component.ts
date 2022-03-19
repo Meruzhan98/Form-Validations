@@ -5,6 +5,9 @@ import {ReplaySubject, Subject} from "rxjs";
 import {MatSelect} from "@angular/material/select";
 import {take, takeUntil} from "rxjs/operators";
 
+import {MatDialog} from '@angular/material/dialog';
+import {DialogComponent} from "../dialog/dialog.component";
+
 
 interface Region{
   name: string;
@@ -23,8 +26,6 @@ interface Website{
 }
 
 
-
-
 @Component({
   selector: 'app-teachers',
   templateUrl: './teachers.component.html',
@@ -37,6 +38,8 @@ export class TeachersComponent implements OnInit, AfterViewInit {
   phoneFormControl = new FormControl('', [Validators.required, Validators.pattern('[- +()0-9]+')]);
   passwordFormControl = new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$')]);
   confirmPasswordFormControl = new FormControl('', [Validators.required]);
+
+  constructor(public dialog: MatDialog) {}
 
 
   regionControl = new FormControl('', Validators.required);
@@ -87,7 +90,7 @@ export class TeachersComponent implements OnInit, AfterViewInit {
 
   hide: boolean = true;
 
-  constructor() { }
+
 
   toppings = new FormControl('', Validators.required);
 
@@ -172,9 +175,12 @@ export class TeachersComponent implements OnInit, AfterViewInit {
     );
   }
 
-  signInButton() {
-    console.log(this.emailFormControl.value);
+
+
+  openDialog() {
+    this.dialog.open(DialogComponent);
   }
+
 
 }
 
