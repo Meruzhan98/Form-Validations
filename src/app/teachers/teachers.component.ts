@@ -33,7 +33,7 @@ interface Website{
 export class TeachersComponent implements OnInit, AfterViewInit {
   nameFormControl = new FormControl('', [Validators.required]);
   lastNameFormControl = new FormControl('', [Validators.required]);
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
+  emailFormControl = new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\\\.[a-z]{2,4}$')]);
   phoneFormControl = new FormControl('', [Validators.required, Validators.pattern('[- +()0-9]+')]);
   passwordFormControl = new FormControl('', [Validators.required, Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$')]);
   confirmPasswordFormControl = new FormControl('', [Validators.required]);

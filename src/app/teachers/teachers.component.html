@@ -1,7 +1,7 @@
 <div class="container-form">
 
 
-  <form class="example-form">
+  <div class="sign-up-form">
 
     <div class="two-texts">
       <h1>{{'sign-up' | translate}}</h1>
@@ -12,29 +12,32 @@
 
     <hr>
     <br>
+    <div style="display: flex" >
 
-    <table class="example-full-width" cellspacing="0"><tr>
-      <td><mat-form-field class="example-full-width" appearance="outline">
+      <mat-form-field style="margin-right: 10px" class="input-width" appearance="outline">
         <mat-label>{{'name' | translate}}</mat-label>
         <input matInput [formControl]="nameFormControl">
         <mat-error *ngIf="nameFormControl.hasError('required')">{{'name-required' | translate}}</mat-error>
-      </mat-form-field></td>
-      <td><mat-form-field class="example-full-width" appearance="outline">
+      </mat-form-field>
+      <mat-form-field class="input-width" appearance="outline">
         <mat-label>{{'last-name' | translate}}</mat-label>
         <input matInput [formControl]="lastNameFormControl">
         <mat-error *ngIf="lastNameFormControl.hasError('required')">{{'last-name-required' | translate}}</mat-error>
-      </mat-form-field></td>
-    </tr></table>
+      </mat-form-field>
+
+    </div>
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+
+
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'email' | translate}}</mat-label>
       <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
       <mat-error *ngIf="emailFormControl.hasError('required')">{{'email-required' | translate}}</mat-error>
     </mat-form-field>
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'telephone' | translate}}</mat-label>
       <span matPrefix>+374 &nbsp;</span>
       <input type="tel" matInput [formControl]="phoneFormControl">
@@ -42,7 +45,7 @@
     </mat-form-field>
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'region' | translate}}</mat-label>
       <mat-select [formControl]="regionControl" required>
         <mat-option>--</mat-option>
@@ -54,7 +57,7 @@
     </mat-form-field>
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'city' | translate}}</mat-label>
       <mat-select [formControl]="cityControl" required>
         <mat-option><input matInput type="search"></mat-option>
@@ -66,7 +69,7 @@
     </mat-form-field>
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'school' | translate}}</mat-label>
       <mat-select [formControl]="schoolControl" required>
         <mat-option>--</mat-option>
@@ -79,7 +82,7 @@
 
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'subject' | translate}}</mat-label>
       <mat-select [formControl]="websiteMultiCtrl" [multiple]="true"  #multiSelect>
         <mat-option>
@@ -96,7 +99,7 @@
 
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'grade' | translate}}</mat-label>
       <mat-select [formControl]="toppings" multiple>
         <mat-select-trigger>
@@ -113,7 +116,7 @@
 
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'password' | translate}}</mat-label>
       <input matInput [type]="hide ? 'password' : 'text'" [formControl]="passwordFormControl">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -124,7 +127,7 @@
 
 
 
-    <mat-form-field class="example-full-width" appearance="outline">
+    <mat-form-field class="input-width" appearance="outline">
       <mat-label>{{'confirm' | translate}}</mat-label>
       <input matInput [type]="hide ? 'password' : 'text'" [formControl]="confirmPasswordFormControl">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -141,7 +144,7 @@
       <button mat-raised-button color="primary" class="button" (click)="signInButton()">Ok</button>
     </div>
 
-  </form>
+  </div>
 
 </div>
 
