@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
     public translate: TranslateService
   ){
     translate.addLangs(['en', 'am', 'ru']);
+    translate.use('en');
     translate.setDefaultLang('en');
   }
 
@@ -23,5 +24,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

@@ -112,7 +112,8 @@
 
 <div class="translation">
   <div *ngFor="let language of translate.getLangs()">
-    <div (click)="translate.use(language)" style="margin-left: 6px; cursor: pointer">
+    <div (click)="translate.use(language)" class="translation-item"
+         [ngClass]="{'translation-item--active': language === translate.currentLang}">
       {{ language == "en" ? "Eng" : language == "am" ? "Հայ" : "Рус" }}
     </div>
   </div>

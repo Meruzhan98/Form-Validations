@@ -22,8 +22,25 @@
   position: absolute;
   right: 12px;
   top: 10px;
-  color: white;
+  color: #FFFFFF;
 }
+
+.translation-item {
+  margin-left: 6px;
+  cursor: pointer;
+  opacity: 50%;
+  &:hover {
+    color: #F8F8F8;
+    opacity: 100%;
+  }
+  &.translation-item--active {
+    color: #F8F8F8;
+    font-weight: 500;
+    opacity: 100%;
+  }
+}
+
+
 
 .nav {
   display: flex;
